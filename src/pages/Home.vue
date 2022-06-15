@@ -3,7 +3,7 @@
     <!-- Adicionando o componente "Loading" -->
     <!-- Se o v-if for true ele vai exibir o componente Loading, se não vai exibir a estrutura debaixo com v-else -->
     <div class="lista-filmes" v-if="loading">
-      <Loading />
+      <LoadingItem />
     </div>
 
     <!-- Estrutura para mostrar dados da API -->
@@ -21,7 +21,7 @@
 
 <script>
 import api from '../service/api'
-import Loading from '../components/Loading'
+import LoadingItem from '../components/Loading'
 
 export default {
  
@@ -29,7 +29,7 @@ export default {
     name:'Home',
      // Pegando o componente Loading para utilizar
     components:{
-      Loading
+      LoadingItem
     },
     data(){
       return{

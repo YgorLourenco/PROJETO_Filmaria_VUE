@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    // eslint-disable-next-line no-undef
-    name: Loading,
+    
+    name: 'LoadingItem',
 
 }
 </script>
